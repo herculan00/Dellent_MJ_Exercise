@@ -1,0 +1,21 @@
+---
+openapi: 3.0.3
+info:
+  title: demo API
+  version: 1.0-SNAPSHOT
+paths:
+  /labseq/{index}:
+    get:
+      tags:
+      - Example Resource
+      parameters:
+      - name: index
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            text/html: {}
